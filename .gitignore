@@ -2,6 +2,9 @@
 *.pyc
 __pycache__
 
+# Cache
+.pytest_cache
+
 # macOS
 .DS_Store
 
