@@ -33,6 +33,9 @@ QueryBuilderWidget(CONDITIONS)
 ### Evaluation
 
 ```py
+from query_builder_widget import evaluate
+
+
 async def server(expected: str, operator: str) -> tuple[bool, str | None]: ...
 
 
