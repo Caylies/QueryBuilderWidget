@@ -26,6 +26,10 @@ FAILURE_SYMBOLS: dict[str, str] = {
 }
 
 
+def use_operator(operator: str, actual: Any, expected: Any) -> bool:
+    return OPERATORS[operator](actual, expected)
+
+
 def describe_failure(field_label: str, operator: str, expected: Any) -> str:
     symbol = FAILURE_SYMBOLS[operator]
 

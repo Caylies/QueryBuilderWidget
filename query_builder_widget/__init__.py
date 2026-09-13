@@ -1,2 +1,2 @@
-from .evaluator import evaluate  # noqa: F401
+from .evaluator import *  # noqa: F403
 from .widget import QueryBuilderWidget  # noqa: F401
