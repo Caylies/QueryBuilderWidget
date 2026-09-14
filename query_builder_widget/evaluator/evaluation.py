@@ -15,6 +15,10 @@ async def evaluate(
 
     if "rules" in node:
         node = cast(QueryGroup, node)
+
+        if not node["rules"]:
+            return EvaluationResult(True, [])
+
         results = [await evaluate(rule, data, field_labels) for rule in node["rules"]]
 
         passed = (

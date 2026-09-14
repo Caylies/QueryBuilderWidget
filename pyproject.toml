@@ -1,6 +1,6 @@
 [project]
 name = "query-builder-widget"
-version = "1.2.0"
+version = "1.2.1"
 description = "A small query builder widget for Django."
 requires-python = ">=3.13"
 
